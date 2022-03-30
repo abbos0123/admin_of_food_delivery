@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_ordersFragment">
+    <fragment
+        android:id="@+id/nav_homeFragment"
+        android:name="uz.food_delivery.admin.fragments.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" />
+    <fragment
+        android:id="@+id/nav_ordersFragment"
+        android:name="uz.food_delivery.admin.fragments.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_nav_ordersFragment_to_ordersFragment"
+            app:destination="@id/ordersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_deleteFragment"
+        android:name="uz.food_delivery.admin.fragments.DeleteFragment"
+        android:label="fragment_d_elete"
+        tools:layout="@layout/fragment_d_elete" />
+    <fragment
+        android:id="@+id/nav_updateFragment"
+        android:name="uz.food_delivery.admin.fragments.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_nav_updateFragment_to_updatePaceFragment"
+            app:destination="@id/updatePaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePaceFragment"
+        android:name="uz.food_delivery.admin.fragments.UpdatePaceFragment"
+        android:label="fragment_update_pace"
+        tools:layout="@layout/fragment_update_pace" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="uz.food_delivery.admin.fragments.SettingsMainFragment"
+        android:label="fragment_settings_main"
+        tools:layout="@layout/fragment_settings_main" >
+        <action
+            android:id="@+id/action_nav_settings_to_adminSettingFragment"
+            app:destination="@id/adminSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mainFragment"
+        android:name="uz.food_delivery.admin.fragments.MainSection_HomeFragmentFragment"
+        android:label="fragment_main_section__home_fragment"
+        tools:layout="@layout/fragment_main_section__home_fragment" />
+    <fragment
+        android:id="@+id/adminSettingFragment"
+        android:name="uz.food_delivery.admin.fragments.AdminSettingFragment"
+        android:label="fragment_admin_setting"
+        tools:layout="@layout/fragment_admin_setting" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="uz.food_delivery.admin.OrdersFragment"
+        android:label="fragment_orders2"
+        tools:layout="@layout/fragment_orders2" />
+
+
+</navigation>

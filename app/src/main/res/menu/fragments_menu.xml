@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_fast_food"
+        android:icon="@drawable/ic_fast_food"
+        android:title="Fast food"/>
+
+    <item android:id="@+id/menu_national_food"
+        android:icon="@drawable/ic_national_food"
+        android:title="National food"/>
+
+    <item android:id="@+id/menu_dessert"
+        android:icon="@drawable/ic_dessert"
+        android:title="Dessert"/>
+
+    <item android:id="@+id/menu_snacks"
+        android:icon="@drawable/ic_snack"
+        android:title="Snacks"/>
+
+    <item android:id="@+id/menu_drinkings"
+        android:icon="@drawable/ic_drinkings"
+        android:title="Drinkings"/>
+
+</menu>
